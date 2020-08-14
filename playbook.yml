@@ -1,0 +1,17 @@
+--- 
+- hosts: webservers
+  become: true
+  roles: 
+    - role: n0emis.bigbluebutton
+      #bbb_secret: bbb-api secret here
+      bbb_greenlight_db_password: kSk3d$fZF4d0nSoA2k$f5FGc
+      bbb_greenlight_secret: A0k6Bg394bOwF34D3mqs
+      bbb_coturn_secret: brahmansatyamjagathmithya
+      bbb_letsencrypt_email: sreeraj@kyt.academy
+      bbb_turn_secret: l4sO4sMs02Ac3
+      bbb_hostname: bigbluebutton.kyt.academy
+      bbb_greenlight_enable: true
+      bbb_cpuschedule: false
+      bbb_freeswitch_ipv6: false
+      #      bbb_freeswitch_external_ip: <elastic-ip>
+
